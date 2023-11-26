@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teo's Portfolio site</title>
+
+    <link href="normalize.css" rel="stylesheet">
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#aboutme">about me</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#references">references</a></li>
+            <li><a href="#contactme">contact me</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="container">
+            <img src="mypics/mypic1.jpg">
+            <h1> Hi l'm Teo! l'm keen on learning how to code!</h1>
+        </div>
+    </section>
+
+    <section id="aboutme" class="aboutme">
+        <h2>About me</h2>
+        <div class="aboutme-section">
+            <div class="img">
+                <div class="aboutme-image"></div>
+            </div>
+            <div class="aboutme-text">
+                <p>Welcome to my programming journey! It all began when I graduated from school and pursued my passion at the Faculty of Applied Informatics at the University of Macedonia. After four years, I graduated with a degree, achieving an average of 7.29. Also, l did a six-month internship as a Communications & Operations Intern at the Pfizer Center of Digital Innovation.</p>
+                <p>During these years, I explored various branches of IT, diving into different programming languages. What interested me the most was the world of Web Development, Software Engineering and Full-Stack Development. Despite being early in my career, I am enthusiastic about continuous learning and exploring the IT industry.</p>
+                <h4>Skills</h4>
+                <ul>
+                    <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript</li>
+                    <li><strong>Backend Development:</strong> PHP7, MySQL</li>
+                    <li><strong>Programming Languages:</strong> Java, Python</li>
+                </ul>
+                <p>Feel free to explore some of the projects I've done below.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects"> <!-- The navbar will transfer to the projects. -->
+            <div id="projects"><!-- The navbar somehow goes right here or else it will go down, we need to keep it this way.-->
+            <h2>Projects</h2>
+            <div class="projects"> <!-- Will hold the individual project elements with a class called projects. -->
+
+                <div class="barca-project">
+                    <div class="text">
+                        <h3 class="project-name">Barca Facts</h3>
+                            <p class="content">A HTML project about some current F.C Barcelona facts.</p>
+                        <a class="button" href="../1-html/MyHTMLsite.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="javascript-project">
+                    <div class="text">
+                        <h3 class="project-name">Java to JavaScript project</h3>
+                            <p class="content">This is a Java project converted in JavaScript to showcase an example of a OOP course at University.</p>
+                        <a class="button" href="javascript.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+            </div> 
+            </div>
+    </section>
+
+    <section id="references">
+        <div id="references">
+        <h2>References</h2>
+        <div class="certificate-container">
+            <div class="certificate">
+                <div class="text">
+                    <h3 class="project-name">Certificate</h3>
+                        <p class="content">Open the Certificate here.</p>
+                        <a class="button" href="../2-css/mypics/certificate_page.jpg" target="_blank">View Certificate</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contactme">
+        <div class="contact">
+            <h2>Contact</h2>
+            <p>Use this form to get in touch. l would love to hear from you!</p>
+
+            <form>
+
+                <div class="contact-details">
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name">
+    
+                    <label for="email">E-mail Address</label>
+                    <input type="email" id="youremail" placeholder="Your email address">
+    
+                    <label for="=subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Reason for your message">
+
+                </div>
+                
+                <div class="message">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="13"></textarea>
+                    <button type="submit">SUBMIT</button>
+        
+                </div>
+
+            </form>
+
+        </div>
+       
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                This site &copy; 2023 Theodore Andronikou
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=100028570727487" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/theodoros-andronikou-a14bb0259/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>

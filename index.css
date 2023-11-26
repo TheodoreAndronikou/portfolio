@@ -1,0 +1,316 @@
+body{
+    background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+    font-family: 'Work Sans', sans-serif;
+    scroll-behavior: smooth;
+} 
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3{
+    font-family: 'Days One', sans-serif;
+} 
+
+nav{
+    display:flex; /*This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.*/
+    background-color: #35039C;
+    justify-content: center; /* This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the 
+    flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment 
+    of items when they overflow the line. */
+    position: fixed;
+    width: 100%; 
+    z-index: 1;
+}
+
+nav ul{
+    display: flex;
+    color: white; /* Αυτό δεν κάνει τίποτα γιατί μιλάμε για το ul σαν συγκρότημα, όχι για το Li το ίδιο, παρακάτω είναι σωστό */
+    align-items: center; /* This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of 
+    it as the justify-content version for the cross-axis (perpendicular to the main-axis). */
+    padding: 0 10%;
+    list-style: none; /* This gets rid of the bullets */
+}
+
+nav ul li a{
+    padding: 0 15px;
+    color: white; 
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+nav ul li a:hover{
+    transition: 0.2s;
+    color: #52c5ff;
+}
+
+.container{
+    position:relative;
+    width: 100%; /* As the container is going to have the whole width of the page*/
+    max-width: 1200px; /* This will automatically change if the height of the content is larger than the max width.*/
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#hero{
+    padding-top: 130px;
+}
+
+#hero img{
+    border-style: none;
+    border-radius: 50%;
+    margin: 0 auto;
+    max-width: 440px;
+    display: block;
+}
+
+h1{
+    text-align: center;
+    font-size: 24px;
+    margin: 30px 8px 100px;
+}
+
+.aboutme{
+    width: 90%;
+    max-width: 1100px; 
+    height: auto;
+    background-color: white;
+    text-align: center;
+    padding: 40px 50px 70px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 0px rgb(0 0 0 / 40%), -10px -10px 0px rgb(255 114 144 / 80%) ;
+}
+
+.aboutme-section{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.aboutme-image{
+    height: 450px;
+    width:400px;
+    background-image: url("mypics/mypic2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutme-text{
+    height: auto;
+    width: 40%;
+    margin-left: 40px;
+    text-align: left;
+    color: black;
+}
+
+#projects{
+    padding: 5px;
+    margin: 5%;
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.barca-project{
+    width: 400px;
+    height: 400px; /* This width and height gives us a square */
+    position: relative;
+    border-radius: 10px;
+    background-image: url("mypics/barcelona.png");
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.text{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.text:hover{
+    height: 175px;
+    transition: 0.4s;
+}
+
+.button{
+    border: 5px solid lightblue;
+    border-radius: 10px;
+    width: 160px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+}
+
+.javascript-project{
+    width: 400px;
+    height: 400px; /* This width and height gives us a square */
+    position: relative;
+    border-radius: 10px;
+    background-image: url("mypics/js.png");
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact{
+    width: 100%;
+    height: auto;
+    padding: 90px 0 50px 0;
+    text-align: center;
+    background-color: rgba(3,3,3,45%);
+}
+
+.contact p{
+    margin-bottom: 50px;
+}
+
+.contact h2{
+    color:white;
+}
+
+.contact p{
+    color:white;
+}
+.contact form{
+    max-width: 800px;
+    display: flex;
+    text-align: left;
+    max-width: 1100px;
+    margin: 0 auto;
+    color:white;
+}
+
+.contact form label{
+    display: block;
+    margin-bottom: 9px;
+}
+
+.contact-details{
+    flex: 1;
+    margin-right: 50px;
+}
+
+.contact-details input{
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    padding: 15px 15px;
+    margin-bottom: 20px;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.message textarea{
+    border-radius: 5px;
+    border: 0px;
+}
+
+.message button{
+    color:#1d3d5f;
+    border: 0;
+    border-radius: 5px;
+    background: lightblue;
+    width: 140px;
+    height: 40px;
+    margin-top:40px;
+    margin-left: auto;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.message button:hover{
+    background: black;
+    color: white;
+    transition: 0.2s;
+}
+
+.content{
+    color: black;
+}
+
+footer{
+    height:90px;
+    background-color: #1f2027;
+}
+
+footer .container{
+    display:flex;
+    align-items: center;
+    height: 100%;
+}
+
+.social-media{
+    font-size: 200%;
+    width: auto;
+    margin-left: auto;
+}
+
+.social-media a i{
+    color:white;
+    transition: 0.2s;
+}
+
+.social-media a i:hover{
+    color: lightblue;
+    transition: 0.2s;
+}
+
+.copyright{
+    color:white;
+}
+
+#references{
+    padding: 5px;
+    margin: 5% 5% 250px 5%;
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+
+.certificate-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+    height: 100px;
+}
+
+.certificate{
+    width: 400px;
+    height: 400px; /* This width and height gives us a square */
+    position: relative;
+    border-radius: 10px;
+    background-image: url("mypics/zt.jpg");
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.certificate-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
