@@ -123,17 +123,6 @@ h1{
     flex-flow: wrap;
 }
 
-.barca-project{
-    width: 400px;
-    height: 400px; /* This width and height gives us a square */
-    position: relative;
-    border-radius: 10px;
-    background-image: url("mypics/barcelona.png");
-    margin: 20px;
-    background-size: cover;
-    background-position: center;
-}
-
 .text{
     position: absolute;
     height: 60px;
