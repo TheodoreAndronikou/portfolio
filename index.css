@@ -389,6 +389,12 @@ nav {
   footer .container {
     flex-direction: column;
     text-align: center;
+    width:100%;
+  }
+    
+  .contact,
+  .container{
+    width: 100%;
   }
 
   .social-media {
