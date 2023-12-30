@@ -270,36 +270,142 @@ footer .container{
     color:white;
 }
 
-#references{
-    padding: 5px;
-    margin: 5% 5% 250px 5%;
+#references {
+  padding: 5px;
+  margin: 5% 5% 250px 5%;
+  width: 90%;
+  height: auto;
+  text-align: center;
+}
+
+.references-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+  height: 100px;
+}
+
+.menu-toggle {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none; /* Initially hidden on larger screens */
+}
+
+.references {
+  width: 400px;
+  height: 400px; /* This width and height gives us a square */
+  position: relative;
+  border-radius: 10px;
+  background-image: url("mypics/zt.jpg");
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+#certificates {
+  padding: 5px;
+  margin: 5% 5% 50px 5%;
+  width: 90%;
+  height: auto;
+  text-align: center;
+}
+
+.certificate-container {
+  position: relative;
+}
+
+.certificate-container img {
+  max-width: 70%;
+  height: auto;
+}
+
+.nav-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+nav {
+  transition: transform 0.4s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav ul li a {
+    padding: 5px 10px;
+    display: block;
+    text-transform: capitalize;
     width: 90%;
-    height: auto;
     text-align: center;
+    font-size: small;
+  }
+
+  nav {
+    transition: transform 0.4s ease;
+  }
+  nav.nav-hidden {
+    transform: translateY(-100%);
+  }
+
+  .aboutme-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutme-text {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .projects {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .javascript-project,
+  .references {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .contact form {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-details,
+  .message {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .message button {
+    margin-left: 0;
+  }
+
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-media {
+    margin-left: 0;
+  }
+
+  #references {
+    margin-bottom: 200px;
+  }
+
+  #certificates {
+    margin: 5% 5% 50px 5%;
+  }
+
+  .certificate-container {
+    max-width: 100%;
+    overflow: hidden;
+  }
 }
 
-.certificate-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: wrap;
-    height: 100px;
-}
-
-.certificate{
-    width: 400px;
-    height: 400px; /* This width and height gives us a square */
-    position: relative;
-    border-radius: 10px;
-    background-image: url("mypics/zt.jpg");
-    margin: 20px;
-    background-size: cover;
-    background-position: center;
-}
-
-.certificate-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: wrap;
-}
