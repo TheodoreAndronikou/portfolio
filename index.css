@@ -329,6 +329,20 @@ nav {
   transition: transform 0.4s ease;
 }
 
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #35039c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
 @media only screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
