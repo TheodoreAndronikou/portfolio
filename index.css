@@ -158,6 +158,28 @@ h1{
     background-position: center;
 }
 
+.dragonsQuest-project {
+  width: 400px;
+  height: 400px; /* This width and height gives us a square */
+  position: relative;
+  border-radius: 10px;
+  background-image: url("mypics/dragon.jpg");
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.slotMachine-project {
+  width: 400px;
+  height: 400px; /* This width and height gives us a square */
+  position: relative;
+  border-radius: 10px;
+  background-image: url("mypics/slotMachineLogo.jpg");
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
 .contact{
     width: 100%;
     height: auto;
