@@ -152,7 +152,7 @@ h1{
   height: 400px; 
   position: relative;
   border-radius: 10px;
-  background-image: url("weatherAPI/weather.jpg");
+  background-image: url("weatherAPI/weather.png");
   margin: 20px;
   background-size: cover;
   background-position: center;
