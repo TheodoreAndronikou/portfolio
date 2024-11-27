@@ -147,6 +147,17 @@ h1{
     margin-left: 10px;
 }
 
+.weatherAPI-project {
+  width: 400px;
+  height: 400px; 
+  position: relative;
+  border-radius: 10px;
+  background-image: url("weatherAPI/weather.jpg");
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
 .javascript-project{
     width: 400px;
     height: 400px; /* This width and height gives us a square */
