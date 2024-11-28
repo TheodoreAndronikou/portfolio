@@ -141,18 +141,18 @@
             <h2>Contact</h2>
             <p>Use this form to get in touch. l would love to hear from you!</p>
 
-            <form>
+            <form action="https://formspree.io/f/xeoqrnzz" method="POST">
 
                 <div class="contact-details">
 
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Your Name">
-    
+                     <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+        
                     <label for="email">E-mail Address</label>
-                    <input type="email" id="youremail" placeholder="Your email address">
-    
-                    <label for="=subject">Subject</label>
-                    <input type="text" id="subject" placeholder="Reason for your message">
+                    <input type="email" id="youremail" name="email" placeholder="Your email address" required>
+                    
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Reason of your message" required>
 
                 </div>
                 
